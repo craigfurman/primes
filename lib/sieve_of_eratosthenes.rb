@@ -20,6 +20,10 @@ class SieveOfEratosthenes
     primes.slice(0, number_of_primes)
   end
 
+  def nth_prime(n)
+    generate_primes(10)[n - 1]
+  end
+
   private
   def initialise_number_line(limit)
     numbers = 0.upto(limit).map { true }

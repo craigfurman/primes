@@ -16,4 +16,10 @@ describe SieveOfEratosthenes do
 
     it { should == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29] }
   end
+
+  describe '#nth_prime' do
+    subject { generator.nth_prime(10) }
+
+    it { should == 29 }
+  end
 end
