@@ -1,4 +1,4 @@
-$LOAD_PATH.unshift(File.dirname(__FILE__))
+$LOAD_PATH.unshift("#{File.dirname(__FILE__)}/lib")
 
 require 'sieve_of_eratosthenes'
 require 'multiplication_table'
