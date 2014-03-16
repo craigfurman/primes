@@ -10,4 +10,10 @@ describe SieveOfEratosthenes do
 
     it { should == primes_to_100 }
   end
+
+  describe '#generate_primes' do
+    subject { generator.generate_primes(10) }
+
+    it { should == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29] }
+  end
 end
