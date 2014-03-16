@@ -10,7 +10,7 @@ class SieveOfEratosthenes
     numbers.each_with_index.map { |prime, i| prime ? i : false }.select { |e| e }
   end
 
-  def generate_primes(number_of_primes)
+  def generate_sequence(number_of_primes)
     limit = 10
     primes = []
     while primes.count < number_of_primes do
@@ -21,7 +21,7 @@ class SieveOfEratosthenes
   end
 
   def nth_prime(n)
-    generate_primes(10)[n - 1]
+    generate_sequence(10)[n - 1]
   end
 
   private
